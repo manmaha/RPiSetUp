@@ -1,7 +1,7 @@
 sudo apt-get install netatalk
 sudo apt-get install avahi-daemon
 sudo update-rc.d avahi-daemon defaults
-scp Manish@StudyMac.local:/Users/Owner/Documents/OneDrive/RaspberryPi/SetUp/afpd afpd.service
+scp Manish@StudyMac.local:/Users/Owner/Documents/OneDrive/RaspberryPi/SetUp/afpd /etc/avahi/services/afpd.service
 sudo /etc/init.d/avahi-daemon restart
 sudo apt-get install tightvncserver
 vncserver
